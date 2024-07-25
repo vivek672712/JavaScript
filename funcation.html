@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function outerFunction(outerVariable) {
+        // Define an inner function
+        function innerFunction(innerVariable) {
+            console.log("Outer: " + outerVariable);
+            console.log("Inner: " + innerVariable);
+        }
+    
+        // Call the inner function
+        innerFunction("Hello from Inner");
+    }
+    
+    // Call the outer function
+    outerFunction("Hello from Outer");
+</script> 
+</body>
+</html>
